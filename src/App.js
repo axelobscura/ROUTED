@@ -24,8 +24,9 @@ function App() {
         <Route exact path='/' component={About} />
         <Route exact path='/dog' component={() => <Dog name='Muffins' />} />
         <Route exact path='/dog/c' component={() => <Dog name='Muffins' />} />
+        {/* RENDER Not creating a component each time */}
         <Route exact path='/dog/r' render={() => <Dog name='Muskin' />} />
-        {/* Not creating a component each time */}
+        {/* RENDER Not creating a component each time */}
         <Route exact path='/hater' component={Hater} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
