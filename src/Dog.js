@@ -5,8 +5,15 @@ class Dog extends Component {
     super(props);
     this.state = {  }
   }
-  render() { 
-    return ( 
+  componentDidMount(){
+    console.log('DOG DID MOUNT!!!')
+  }
+  componentWillUnmount(){
+    console.log('DOG DID UNMOUNT!!!')
+  }
+  render() {
+    console.log('DOG RENDERD'); 
+    return (
       <div>
         <h1>THE DOG</h1>
         <h2>{this.props.name}</h2>
