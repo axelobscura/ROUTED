@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch, Link} from 'react-router-dom';
+import {Route, Switch, NavLink} from 'react-router-dom';
 import About from './About';
 import Dog from './Dog';
 import Contact from './Contact';
@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <div className="nav">
         <div className="App-nav">
-          <Link to="/">About</Link>
-          <Link to="/dog">Dog</Link>
-          <Link to="/hater">Hater</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink exact activeClassName="active-link" to="/">About</NavLink>
+          <NavLink exact activeClassName="active-link" to="/dog">Dog</NavLink>
+          <NavLink exact activeClassName="active-link" to="/hater">Hater</NavLink>
+          <NavLink exact activeClassName="active-link" to="/contact">Contact</NavLink>
         </div>
       </div>
       <Switch>
